@@ -1,0 +1,220 @@
+.page {
+	display: inline-block;
+	width: 100vw;
+	height: 80vw;
+	background-image: url("page.png");
+	background-position: 0px -10px;
+	background-size: 100vw 80vh;
+}
+
+.container {
+	overflow-x: hidden;
+	margin-left: -5px;
+	margin-top: 0px;
+	height: 650vw;
+	width: 100vw;
+}
+
+.left {
+	float: left;
+}
+
+.left img {
+	display: block;
+	max-width: 80%;
+	max-height: 55%;
+	margin-top: -5%;
+	margin-bottom: 50%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-size: contain;
+	background-position: center center;
+}
+
+.right {
+	float: right;
+}
+
+.description {
+	margin-top: 15%;
+	margin-right: 15%;
+	margin-left: 8%;
+}
+
+.left, .right {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+}
+
+.contact-link {
+	margin-top: 41%;
+	margin-bottom: 41%;
+	margin-right: 3%;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.contact-image {
+	max-width: 70%;
+	max-height: 70%;
+}
+
+p, button {
+	font-family: "Geo Sans Light", sans-serif;
+}
+
+button {
+	align-self: right;
+	margin-left: 15%;
+	margin-top: 24%;
+	width: 70%;
+	font-size: 2em;
+	border-radius: 2%;
+	background-color: #01abcf;
+	color: #ffffff;
+	border-color: #00839f;
+	transition: font-size 0.5s;
+}
+
+button:hover {
+	font-size: 2.3em;
+	background-color: #ffffff;
+	color: #01abcf;
+	transition: font-size 0.5s;
+}
+
+p {
+	font-size: 1em;
+	direction: rtl;
+}
+
+a {
+	text-decoration: none;
+	width: 23%;
+}
+
+.nav-item, nav ul li a {
+	max-height: 64px;
+}
+
+.nav-item {
+	max-width: 100%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+nav ul li {
+	margin: 2%;
+	min-width: 100%;
+	align-content: center;
+}
+
+nav ul {
+	margin: auto;
+	padding: 10px;
+	width: 100%;
+	display: inline-block;
+	list-style: none;
+	align-content: center;
+}
+
+nav {
+	position: sticky;
+	left: 0.1vh;
+	width: 99.8vh;
+	min-height: 90px;
+	align-content: center;
+	background-image: url("nav-bar.png");
+	background-size: 100% 100%;
+	display: none;
+}
+
+body {
+	display: inline-block;
+	background-color: #979cb8;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	margin-top: -4%;
+	font-size: 1.5em;
+}
+
+h1, h2 {
+	font-family: "Orange Juice", sans-serif;
+	margin-left: 10%;
+}
+
+h1, h2, p {
+	color: #01abcf;
+	transition: color 1s;
+}
+
+#page1 .right .description {
+	margin-top: 45%;
+}
+
+@media only screen and (min-width: 650px) {
+	.page {
+		display: inline-block;
+		width: 100vw;
+		height: 100%;
+		background-image: url("page.png");
+		background-position: 0px -10px;
+		background-size: 100vw 100vh;
+	}
+
+	button {
+		margin-top: 12%;
+	}
+
+	.description {
+		margin-top: 23%;
+		margin-right: 15%;
+		margin-left: 8%;
+	}
+
+	.container {
+		overflow-x: all;
+		margin-left: -5px;
+		margin-top: 0px;
+		height: 80vh;
+		width: 805.2vw;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	nav ul li {
+		float: left;
+		margin: 0.2%;
+		min-width: 7%;
+		align-content: center;
+	}
+
+	nav {
+		display: inline;
+		position: fixed;
+		left: 0.1%;
+		width: 99.8%;
+		bottom: 0px;
+	}
+}
